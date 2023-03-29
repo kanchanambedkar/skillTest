@@ -1,0 +1,82 @@
+/* fonts */
+@font-face {
+  font-family: 'FreeSans';
+  src: url('./components/assets/fonts/FreeSans.ttf');
+}
+@font-face {
+  font-family: 'FreeSansBold';
+  src: url('./components/assets/fonts/FreeSansBold.ttf');
+}
+
+
+html body{
+  font-family: 'FreeSans';
+}
+
+.wrapper{
+  display: flex;
+}
+
+
+/* theme-change-css */
+.dark .sidebar{
+  background-color: #3339CD;
+  border-right: 2px solid #eceef066;
+}
+.dark .icon svg path, .dark .icon:hover svg path{
+  fill: #fff;
+}
+.dark .icon:hover {
+  background: #676AD8;
+  border: 1px solid #8D8EF9;
+}
+.dark .list-group-item, .dark .accordion-item .accordion-button:not(.collapsed), .dark .accordion-item .accordion-item .accordion-button{
+  color: #fff;
+}
+.dark .toggle_switch {
+  background: #3339CD;
+  border: 1px solid #6B6DE6;
+}
+.dark .form-switch .form-check-input:checked~label::after{
+  width: 50px;
+  height: 54px;
+  background-color: #7273DC;
+  border: 1px solid #989BFF;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.04);
+}
+html .dark .form-switch .form-check-input~label::after{
+    background-image: url('./components/assets/img/whitemoon.svg');
+}
+.dark .form-switch .form-check-input~label::before{
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    background-image: url('./components/assets/img/whiteSun.svg');
+}
+.dark .main-container{
+  background-color: #3339CD;
+}
+.dark .accordion .accordion-button, .dark .accordion-item{
+  background-color: transparent;
+  box-shadow: none;
+}
+.dark .accordion .accordion-button, .dark .accordion-body{
+  color: #fff;
+}
+
+.dark .accordion .accordion-button::after, .dark .accordion .accordion-button:not(.collapsed)::after,.dark .accordion .accordion-item .accordion-item .accordion-button:not(.collapsed)::after{
+  border: 0;
+  background-image: url('./components/assets/img/whiteminus.svg');
+}
+.dark .accordion-button[aria-expanded="true"]{
+  background: #676AD8;
+}
+.dark .accordion-button[aria-expanded="true"] svg path, .dark .accordion-button svg path, .dark .accordion-button .svg path{
+  fill: #fff;
+}
+.dark .selectFormInner .form-check::after{
+  background: url('./components/assets/img/whiteSelectbox.svg') no-repeat;
+}
+.dark .selectFormInner input.form-check-input:checked + label:before{
+  background-color: #fff;
+}

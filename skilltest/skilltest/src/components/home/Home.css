@@ -1,0 +1,109 @@
+.main-container {
+    width: calc(100% - 104px);
+    padding: 35px 25px;
+    margin-left: auto;
+    z-index: 0;
+    position: relative;
+    min-height: 100vh;
+}
+.accordion .accordion-button {
+    font-family: 'FreeSansBold';
+    padding: 12px 17px;
+    border: 0;
+    border-radius: 6px;
+    color: #3D4149;
+    font-size: 17px;
+}
+.accordion .accordion-button::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='2' viewBox='0 0 16 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.97' d='M0.308319 0.250019C5.32499 0.0833527 10.35 0.166685 15.3667 0.191685C15.3583 0.600019 15.35 1.40835 15.3417 1.81669C10.5333 1.75002 5.70832 2.04169 0.916653 1.70002C0.758319 1.34169 0.458319 0.616686 0.308319 0.250019Z' fill='%23727272'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 50% 50%;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #EFEEF1;
+    border-radius: 5px;
+    transform: none;
+}
+.accordion .accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='2' viewBox='0 0 16 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.97' d='M0.308319 0.250019C5.32499 0.0833527 10.35 0.166685 15.3667 0.191685C15.3583 0.600019 15.35 1.40835 15.3417 1.81669C10.5333 1.75002 5.70832 2.04169 0.916653 1.70002C0.758319 1.34169 0.458319 0.616686 0.308319 0.250019Z' fill='%234B50BA'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 50% 50%;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #4B50BA;
+    border-radius: 5px;
+    transform: none;
+}
+.accordion .accordion-button:focus{
+    border: 0;
+    box-shadow: none;
+}
+.accordion-button svg {
+    width: 16px;
+    margin-right: 10px;
+    height: 18px;
+    object-fit: contain;
+}
+.accordion-button[aria-expanded="true"] svg path{
+    fill: #4b50ba;
+}
+.accordion-item .accordion-item .accordion-button {
+    background-color: transparent;
+}
+.accordion-item .accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.accordion .accordion-item .accordion-item .accordion-button:not(.collapsed)::after{
+    border: 1px solid #EFEEF1;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='2' viewBox='0 0 16 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.97' d='M0.308319 0.250019C5.32499 0.0833527 10.35 0.166685 15.3667 0.191685C15.3583 0.600019 15.35 1.40835 15.3417 1.81669C10.5333 1.75002 5.70832 2.04169 0.916653 1.70002C0.758319 1.34169 0.458319 0.616686 0.308319 0.250019Z' fill='%23727272'/%3E%3C/svg%3E");
+}
+.accordion-item .accordion-item .accordion-button{
+    color: #3D4149;
+    font-family: 'FreeSans';
+    font-size: 18px;
+}
+.selectFormInner {
+    padding: 0px 45px;
+}
+.selectFormInner label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.selectFormInner .form-check{
+    position: relative;
+}
+.selectFormInner .form-check::after {
+    content: "";
+    position: absolute;
+    background: url('../assets/img/selectbox.svg') no-repeat;
+    left: -3px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    z-index: 0;
+}
+.selectFormInner input.form-check-input:checked + label:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -3px;
+    top: 2px;
+    background-color: #4B50BA;
+}
+.selectFormInner .form-check input{
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+}
+.selectFormInner.accordion-body {
+    padding-left: 45px;
+}
+.accordion-item .accordion-button:not(.collapsed){
+    color: #4B50BA;
+}
+#selectAll+label{
+    text-decoration: underline;
+}
